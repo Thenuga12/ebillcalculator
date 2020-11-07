@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Electric Bill Calculator</title>
+<style>
+body{
+margin:10;
+padding:1;
+text-align:center;
+font-family:sans-serif;
+background-color:#ff6b6b;
+}
+
+div{
+width:500px;
+position:absolute;
+top:20%;
+left:30%;
+background-color:#fff;
+padding:20px;
+border-radius:10px;
+box-shadow:1px 1px 20px #ee5253;
+}
+footer{
+width:500px;
+position:absolute;
+top:65%;
+left:30%;
+background-color:pink;
+padding:20px;
+border-radius:10px;
+
+}
+
+#btn{
+font-family:inherit;
+margin-top:10px;
+border=none;
+color:#fff;
+background-image:linear-gradient(120deg,#ff6b6b,#5f27cd);
+width:150px;
+padding:10px;
+border-radius:30px;
+outline:none;
+cursor:pointer;
+
+}
+
+#btn:hover{
+box-shadow:1px 1px 10px #341f97;
+}
+
+#result{
+color:#341f97;
+}
+#info{
+font-size:15px;
+font-family:inherit;
+}
+</style>
+
+</head>
+<body>
+<script type="text/javascript" src="Elc.js"></script>
+<h1><center>Domestric Electricity Bill Calculator</center></h1>
+<center>
+<div>
+<form >
+<p class="text">No Of Units used:<input type="number" id="unit" placeholder="Enter positive units">kWh<br/>
+<BR>
+<input type="reset" value="clear">
+</form>
+<br><br><br>
+<p id="result"></p>
+<button id="btn" onClick="Calculate()">Calculate my BILL</button> 
+</div>
+</center>
+<footer>
+<a href="https://roar.media/english/life/reports/electricity-bill-calculated-analysis/">More Information on how my bill is calculate<b></b></a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<a href="https://ceb.lk/bill-calculation-commercial/en">Go to CEB website </a>
+<center>	<p id="info"> <u>Created by Thenuga.K</u></p></center>
+</footer>
+</body>
+</html>
